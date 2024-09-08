@@ -1,0 +1,107 @@
+/* Apply box-sizing globally */
+* {
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    background: #000; /* Set a solid black background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+/* Container styles */
+.container {
+    background: linear-gradient(#ffea7e, #f8be00);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 90%; /* Use percentage for responsive width */
+    max-width: 550px; /* Ensure it doesn't exceed this width */
+    text-align: center;
+}
+
+/* Profile section styles */
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px; /* Adjusted for better visibility */
+    height: 150px;
+    border: 3px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Text styles */
+.name {
+    font-family: 'RussoOne', sans-serif;
+    font-size: 24px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.bio {
+    font-family: 'KellySlab', serif;
+    color: #dddddd;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* Links container styles */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual link styles */
+.link {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px 100px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link i {
+    margin-right: 8px;
+}
+
+.link:hover {
+    background-color: #ff9100;
+    transform: translateY(-3px);
+}
+
+/* Footer styles */
+footer {
+    font-family: 'KellySlab', serif;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #dddddd;
+    font-weight: 800;
+}
+
+/* Font-face declarations */
+@font-face {
+    font-family: 'RussoOne';
+    src: url('font/Russo_One/RussoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KellySlab';
+    src: url('font/Kelly_Slab/KellySlab-Regular.ttf') format('truetype');
+}
